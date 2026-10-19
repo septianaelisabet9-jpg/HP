@@ -8,7 +8,7 @@
 <body>
     <h2>Form Tambah Pelanggan</h2>
     
-    <form action="/simpan-pelanggan" method="POST">
+    <form action="/simpan_pelanggan" method="POST">
         @csrf
         <label>Nama Pelanggan:</label><br>
         <input type="text" name="nama_pelanggan" required><br><br>

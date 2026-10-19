@@ -8,7 +8,8 @@
 <body>
     <h2>Form Tambah Transaksi</h2>
     
-    <form action="/simpan-transaksi" method="POST">
+    <!-- PERBAIKAN DI SINI: ganti action ke /simpan_transaksi -->
+    <form action="/simpan_transaksi" method="POST">
         @csrf
         <label>Pilih Pelanggan:</label><br>
         <select name="id_pelanggan" required>
@@ -25,6 +26,8 @@
                 <option value="{{ $l->id }}">{{ $l->nama_layanan }} (Rp {{ number_format($l->harga, 0, ',', '.') }})</option>
             @endforeach
         </select><br><br>
+
+        
 
         <label>Berat Cucian (Kg / Jumlah):</label><br>
         <input type="number" step="0.1" name="jumlah" required><br><br>

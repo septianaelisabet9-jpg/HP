@@ -11,15 +11,21 @@
 
     <h3>Menu Navigasi:</h3>
     
-        <a href="/pelanggan">Data Pelanggan</a>
-        <br>
-        <a href="/layanan">Data Layanan</a>
-        <br>
-        <a href="/transaksi">Data Transaksi</a>
-        <br>
+    <a href="/pelanggan">Data Pelanggan</a>
     <br>
-    <button>
-    <a href="/logout">Logout</a>
-    </button>
+    <a href="/layanan">Data Layanan</a>
+    <br>
+    <a href="/transaksi">Data Transaksi</a>
+    <br>
+    <a href="/karyawan">Data Karyawan</a>
+    <br>
+    <a href="/pembayaran">Data Pembayaran</a>
+    <br>
+    <a href="/laporan">Laporan Keuangan</a>
+    <br><br>
+
+    <a href="/logout">
+        <button type="button">Logout</button>
+    </a>
 </body>
 </html>

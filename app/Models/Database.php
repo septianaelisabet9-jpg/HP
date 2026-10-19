@@ -20,4 +20,18 @@ class Database extends Model
     {
         return DB::table($tabel)->get();
     }
+
+    // --- TAMBAHAN FUNGSI AGAR $kelvin->tambah & $kelvin->tarik BISA DIPANGGIL ---
+
+    // Fungsi untuk menambah data ke tabel
+    public function tambah($tabel, $data)
+    {
+        return DB::table($tabel)->insert($data);
+    }
+
+    // Fungsi untuk menarik 1 data berdasarkan kondisi (alias dari pull)
+    public function tarik($tabel, $kondisi)
+    {
+        return DB::table($tabel)->where($kondisi)->first();
+    }
 }
